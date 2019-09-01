@@ -6,6 +6,10 @@ import List from '@/pages/List'
 import Ranking from '@/pages/Ranking'
 import Show from '@/pages/Show'
 import Bookshelf from '@/pages/Bookshelf'
+import Adomission from '@/pages/Admission'
+import Female from '@/pages/Female'
+import MyBookshelf from '@/pages/MyBookshelf'
+import Recent from '@/pages/Recent'
 
 
 
@@ -36,11 +40,25 @@ export default new Router({
     },{
       path: '/show',
       name: 'Show',
-      component: Show
+      component: Show,
+      children:[{
+        path:'/admission',
+        component:Adomission
+      },{
+        path:'/female',
+        component:Female
+      }]
     },{
       path:'/bookshelf',
       name:'Bookshelf',
-      component:Bookshelf
+      component:Bookshelf,
+      children:[{
+        path:'/myBookshelf',
+        component:MyBookshelf
+      },{
+        path:'/recent',
+        component:Recent
+      }]
     }
   ]
 })

@@ -11,7 +11,7 @@ import VueAwesomeSwiper from 'vue-awesome-swiper'
 import 'swiper/dist/css/swiper.css'
 Vue.use(VueAwesomeSwiper)
 
-axios
+// axios
 Vue.prototype.axios = axios
 Vue.config.productionTip = false
 

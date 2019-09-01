@@ -1,7 +1,7 @@
 <template>
     <div>
         <Header />
-        list
+        分类页面
     </div>
 </template>
 <script>
